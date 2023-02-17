@@ -14,13 +14,13 @@
 # SPDX-License-Identifier: Apache-2.0
 
 set ::env(PDK) "gf180mcuC"
-set ::env(STD_CELL_LIBRARY) "gf180mcu_fd_sc_mcu7t5v0"
+set ::env(STD_CELL_LIBRARY) "gf180mcu_osu_sc_gp9t3v3"
 
-set ::env(DESIGN_NAME) user_proj_example
+set ::env(DESIGN_NAME) ffra 
 
 set ::env(VERILOG_FILES) "\
 	$::env(DESIGN_DIR)/../../verilog/rtl/defines.v \
-	$::env(DESIGN_DIR)/../../verilog/rtl/user_proj_example.v"
+	$::env(DESIGN_DIR)/../../verilog/rtl/ffra.v"
 
 set ::env(DESIGN_IS_CORE) 0
 
