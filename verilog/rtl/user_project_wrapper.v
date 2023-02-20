@@ -30,7 +30,7 @@
  */
 
 module user_project_wrapper #(
-    parameter BITS = 32
+    parameter BITS = 8
 )(
 `ifdef USE_POWER_PINS
     inout vdd,		// User area 5.0V supply
