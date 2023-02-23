@@ -64,7 +64,11 @@ module user_project_wrapper #(
 
     // User maskable interrupt signals
     output [2:0] user_irq
+
 );
+
+    wire [55:0]  o_ext, ci_ext;
+    wire [23:0]  a_ext, b_ext;
 
 /*--------------------------------------*/
 /* User project is instantiated  here   */
@@ -117,10 +121,10 @@ ffra mprj (
 
      .clk(wb_clk_i),
      .rst(wb_rst_i), // unused, but amaranth still creates it
-     .a(io_in[7:0]),
-     .b(io_in[15:8]),
-     .ci(io_in[31:16]),
-     .o(io_out[15:0])
+     .a({a_ext, io_in[7:0]}),
+     .b({b_ext, io_in[15:8]}),
+     .ci({ci_ext,io_in[23:16]}),
+     .o({o_ext,io_out[7:0]})
 );
 
 endmodule	// user_project_wrapper

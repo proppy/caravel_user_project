@@ -1,6 +1,6 @@
 module ffra 
 #(
-    parameter BITS=8
+    parameter BITS=32
 ) (
 `ifdef USE_POWER_PINS
     input vdd,

@@ -51,6 +51,6 @@ set ::env(RT_MAX_LAYER) {Metal4}
 set ::env(VDD_NETS) [list {vdd}]
 set ::env(GND_NETS) [list {vss}]
 
-set ::env(DIODE_INSERTION_STRATEGY) 4 
+set ::env(DIODE_INSERTION_STRATEGY) 4
 # If you're going to use multiple power domains, then disable cvc run.
 set ::env(RUN_CVC) 1
