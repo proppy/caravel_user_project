@@ -9,7 +9,7 @@ on:
 
 env:
   MPW_TAG: gfmpw-0f
-  USER_ID: '00000001'
+  USER_ID: '18100003'
   CACHE_KEY: 0
   PDK: gf180mcuC
   STD_CELL_LIBRARY: gf180mcu_fd_sc_mcu7t5v0
@@ -60,6 +60,8 @@ jobs:
       - name: run flow
         run: |
           make user_proj_example
+          (cd OTA_2stage_macro && magic -dnull -noconsole < mag.tcl)
+          cp OTA_2stage_macro/OTA_2stage_macro.mag mag/
           make user_project_wrapper
 
       - name: archive openlane runs

@@ -66,6 +66,21 @@ module user_project_wrapper #(
     output [2:0] user_irq
 );
 
+
+OTA_2stage_macro amp1(
+`ifdef USE_POWER_PINS
+	.vdd(vdd),
+	.vss(vss),
+`endif
+);
+
+OTA_2stage_macro amp2(
+`ifdef USE_POWER_PINS
+	.vdd(vdd),
+	.vss(vss),
+`endif
+);
+   
 /*--------------------------------------*/
 /* User project is instantiated  here   */
 /*--------------------------------------*/
