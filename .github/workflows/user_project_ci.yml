@@ -61,7 +61,7 @@ jobs:
         run: |
           make user_proj_example
           (cd OTA_2stage_macro && magic -dnull -noconsole < mag.tcl)
-          cp OTA_2stage_macro/OTA_2stage_macro.mag mag/
+          cp OTA_2stage_macro/OTA_2stage_macro_flat.mag mag/OTA_2stage_macro.mag
           make user_project_wrapper
 
       - name: archive openlane runs
