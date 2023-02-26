@@ -60,8 +60,12 @@ jobs:
       - name: run flow
         run: |
           make user_proj_example
-          (cd OTA_2stage_macro && magic -dnull -noconsole < tcl.tcl)                   (cd OTA_2stage_macro && magic -dnull -noconsole < mag.tcl)
+          (cd OTA_2stage_macro && magic -dnull -noconsole < lef.tcl)
+          (cd OTA_2stage_macro && magic -dnull -noconsole < mag.tcl)
           cp OTA_2stage_macro/OTA_2stage_macro_flat.mag mag/OTA_2stage_macro.mag
+          (cd TopLevel_oscillator_macro/ && magic -dnull -noconsole < lef.tcl)
+          (cd TopLevel_oscillator_macro/ && magic -dnull -noconsole < mag.tcl)
+          make osc
           make user_project_wrapper
 
       - name: archive openlane runs
@@ -71,6 +75,7 @@ jobs:
           name: openlane-runs
           path: |
             ${{ github.workspace }}/openlane/user_proj_example/runs/
+            ${{ github.workspace }}/openlane/os/runs/            
             ${{ github.workspace }}/openlane/user_project_wrapper/runs/
             ${{ github.workspace }}/gds/
 

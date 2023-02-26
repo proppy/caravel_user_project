@@ -80,6 +80,14 @@ OTA_2stage_macro amp2(
 	.vss(vss),
 `endif
 );
+
+osc osc1(
+`ifdef USE_POWER_PINS
+	.vdd(vdd),
+	.vss(vss),
+`endif
+);
+         
    
 /*--------------------------------------*/
 /* User project is instantiated  here   */

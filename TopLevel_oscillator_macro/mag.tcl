@@ -1,0 +1,9 @@
+gds read TopLevel_oscillator_macro.gds
+load TopLevel_oscillator_macro
+
+select top cell
+expand
+flatten TopLevel_oscillator_macro_flat
+load TopLevel_oscillator_macro_flat
+
+save
