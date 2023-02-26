@@ -17,6 +17,7 @@ env:
 
 jobs:
   tapeout:
+    timeout-minutes: 360
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -80,6 +81,7 @@ jobs:
             ${{ github.workspace }}/gds/
 
       - name: run precheck
+        timeout-minutes: 180        
         run: |
           python -m pip install -r requirements.mpw_precheck.txt
           make run-precheck
