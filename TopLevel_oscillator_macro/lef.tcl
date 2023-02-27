@@ -11,7 +11,8 @@ port Y class output
 port Y use signal
 port AND_OUT class input
 port AND_OUT use signal
-port CLK_IN remove
+port CLK_EN class input
+port CLK_EN use signal
 port ASIG5V remove
 
 lef write -hide

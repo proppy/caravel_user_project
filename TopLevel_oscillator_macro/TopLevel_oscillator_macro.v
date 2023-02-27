@@ -4,7 +4,8 @@ module TopLevel_oscillator_macro (
     inout VP,
     inout GND,
 `endif
+    input CLK_EN,
     output Y,
-    inout AND_OUT
+    input AND_OUT
 );
 endmodule // TopLevel_oscillator

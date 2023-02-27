@@ -50,8 +50,8 @@
 // up in a state that can be used immediately without depending on
 // the management SoC to run a startup program to configure the GPIOs.
 
-`define USER_CONFIG_GPIO_5_INIT  `GPIO_MODE_USER_STD_OUTPUT
-`define USER_CONFIG_GPIO_6_INIT  `GPIO_MODE_USER_STD_OUTPUT
+`define USER_CONFIG_GPIO_5_INIT  `GPIO_MODE_USER_STD_INPUT
+`define USER_CONFIG_GPIO_6_INIT  `GPIO_MODE_USER_STD_INPUT
 `define USER_CONFIG_GPIO_7_INIT  `GPIO_MODE_USER_STD_OUTPUT
 `define USER_CONFIG_GPIO_8_INIT  `GPIO_MODE_USER_STD_OUTPUT
 `define USER_CONFIG_GPIO_9_INIT  `GPIO_MODE_USER_STD_OUTPUT

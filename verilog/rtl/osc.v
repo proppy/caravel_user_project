@@ -17,6 +17,7 @@ module osc (
         .VP(vdd),	// User area 1 1.8V power
         .GND(vss),	// User area 1 digital ground
 `endif
+       .CLK_EN(osc_en),
        .Y(osc_sig),
        .AND_OUT(osc_out)
    );

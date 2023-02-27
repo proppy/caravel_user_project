@@ -86,8 +86,16 @@ osc osc1(
 	.vdd(vdd),
 	.vss(vss),
 `endif
+        .osc_en(io_in[5])
 );
-         
+
+osc osc2(
+`ifdef USE_POWER_PINS
+	.vdd(vdd),
+	.vss(vss),
+`endif
+        .osc_en(io_in[6])
+);
    
 /*--------------------------------------*/
 /* User project is instantiated  here   */
