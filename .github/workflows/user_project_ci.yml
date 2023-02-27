@@ -73,6 +73,7 @@ jobs:
             ${{ github.workspace }}/openlane/user_proj_example/runs/
             ${{ github.workspace }}/openlane/user_project_wrapper/runs/
             ${{ github.workspace }}/gds/
+            ${{ github.workspace }}/gf180teststructure/gf180_teststructures/
 
       - name: run precheck
         run: |
