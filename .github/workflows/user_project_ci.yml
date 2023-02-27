@@ -59,8 +59,8 @@ jobs:
       
       - name: run flow
         run: |
-          (cd gf180_teststructures && magic -dnull -noconsole < lef.tcl)
-          (cd gf180_teststructures && magic -dnull -noconsole < mag.tcl)
+          (cd gf180_teststructures && magic -T gf180mcuC -dnull -noconsole < lef.tcl)
+          (cd gf180_teststructures && magic -T gf180mcuC -dnull -noconsole < mag.tcl)
           cp gf180_teststructures/gf180_teststructures_flat.mag mag/gf180_teststructures.mag
           make user_project_wrapper
 
@@ -73,7 +73,7 @@ jobs:
             ${{ github.workspace }}/openlane/user_proj_example/runs/
             ${{ github.workspace }}/openlane/user_project_wrapper/runs/
             ${{ github.workspace }}/gds/
-            ${{ github.workspace }}/gf180teststructure/gf180_teststructures/
+            ${{ github.workspace }}/gf180_teststructures/
 
       - name: run precheck
         run: |
