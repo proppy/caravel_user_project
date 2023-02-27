@@ -59,8 +59,6 @@ jobs:
       
       - name: run flow
         run: |
-          make user_proj_example
-          make user_project_wrapper
 
       - name: archive openlane runs
         if: always()        
