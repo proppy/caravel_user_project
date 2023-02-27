@@ -42,9 +42,10 @@ set ::env(CLOCK_PERIOD) "24"
 ### Macro PDN Connections
 set ::env(FP_PDN_MACRO_HOOKS) "\
 	mprj vdd vss vdd vss, \
-        amp1 vdd vss vdd vss, \
-        amp2 vdd vss vdd vss,
-        osc1 vdd vss vdd vss"
+        amp1 vdd vss VDD VSS, \
+        amp2 vdd vss VDD VSS,
+        osc1 vdd vss vdd vss,
+        osc2 vdd vss vdd vss"
 
 ### Macro Placement
 set ::env(MACRO_PLACEMENT_CFG) $::env(DESIGN_DIR)/macro.cfg
