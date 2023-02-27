@@ -1,0 +1,1825 @@
+export CARAVEL_ROOT=/home/lrburle/OSU/MPW18H1/caravel_ffra/caravel && make -f /home/lrburle/OSU/MPW18H1/caravel_ffra/caravel/Makefile ship
+make[1]: Entering directory '/home/lrburle/OSU/MPW18H1/caravel_ffra'
+All files are uncompressed!
+cd /home/lrburle/OSU/MPW18H1/caravel_ffra/caravel && \
+make uncompress
+make[2]: Entering directory '/home/lrburle/OSU/MPW18H1/caravel_ffra/caravel'
+All files are uncompressed!
+make[2]: Leaving directory '/home/lrburle/OSU/MPW18H1/caravel_ffra/caravel'
+Running make ship in the foreground...
+make -f /home/lrburle/OSU/MPW18H1/caravel_ffra/caravel/Makefile __ship
+make[2]: Entering directory '/home/lrburle/OSU/MPW18H1/caravel_ffra'
+###############################################
+Generating Caravel GDS (sources are in the 'gds' directory)
+#@cd /home/lrburle/OSU/MPW18H1/caravel_ffra/caravel/mag && PDKPATH=/home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC MAGTYPE=mag magic -noc -dnull -rcfile /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.tech/magic/gf180mcuC.magicrc /home/lrburle/OSU/MPW18H1/caravel_ffra/mag/mag2gds_caravel.tcl 2>&1 | tee /home/lrburle/OSU/MPW18H1/caravel_ffra/signoff/build/make_ship.out
+
+Magic 8.3 revision 365 - Compiled on Fri Feb  3 23:18:26 UTC 2023.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology gf180mcuC ...
+10 Magic internal units = 1 Lambda
+Input style import: scaleFactor=10, multiplier=2
+/home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.tech/magic/gf180mcuC.tech: line 3212: section extract:
+	Illegal keyword.  Legal keywords are:
+	 areacap contact cscale defaultareacap defaultoverlap defaultperimeter defaultsideoverlap defaultsidewall device fet fetresist fringeshieldhalo height antenna model tiedown lambda overlap perimc planeorder noplaneordering resist rscale sidehalo sideoverlap sidewall step style substrate units variants
+The following types are not handled by extraction and will be treated as non-electrical types:
+    obsactive mvobsactive filldiff fillpoly m1hole obsm1 fillm1 obsv1 m2hole obsm2 fillm2 obsv2 m3hole obsm3 fillm3 m4hole obsm4 fillm4 m5hole obsm5 fillm5 glass fillblock lvstext obscomment 
+Scaled tech values by 10 / 1 to match internal grid scaling
+Loading gf180mcuC Device Generator Menu ...
+Loading "/home/lrburle/OSU/MPW18H1/caravel_ffra/mag/mag2gds_caravel.tcl" from command line.
+Scaled magic input cell user_project_wrapper geometry by factor of 2
+user_project_wrapper: 10000 rects
+user_project_wrapper: 20000 rects
+user_project_wrapper: 30000 rects
+user_project_wrapper: 40000 rects
+user_project_wrapper: 50000 rects
+user_project_wrapper: 60000 rects
+user_project_wrapper: 70000 rects
+user_project_wrapper: 80000 rects
+user_project_wrapper: 90000 rects
+user_project_wrapper: 100000 rects
+user_project_wrapper: 110000 rects
+user_project_wrapper: 120000 rects
+user_project_wrapper: 130000 rects
+caravel_core: 10000 rects
+caravel_core: 20000 rects
+caravel_core: 30000 rects
+caravel_core: 40000 rects
+caravel_core: 50000 rects
+caravel_core: 60000 rects
+caravel_core: 70000 rects
+caravel_core: 80000 rects
+caravel_core: 90000 rects
+caravel_core: 100000 rects
+caravel_core: 110000 rects
+caravel_core: 120000 rects
+caravel_core: 130000 rects
+caravel_core: 140000 rects
+caravel_core: 150000 rects
+caravel_core: 160000 rects
+caravel_core: 170000 rects
+caravel_core: 180000 rects
+caravel_core: 190000 rects
+caravel_core: 200000 rects
+caravel_core: 210000 rects
+caravel_core: 220000 rects
+caravel_core: 230000 rects
+caravel_core: 240000 rects
+caravel_core: 250000 rects
+caravel_core: 260000 rects
+caravel_core: 270000 rects
+caravel_core: 280000 rects
+caravel_core: 290000 rects
+caravel_core: 300000 rects
+caravel_core: 310000 rects
+caravel_core: 320000 rects
+caravel_core: 330000 rects
+caravel_core: 340000 rects
+caravel_core: 350000 rects
+caravel_core: 360000 rects
+caravel_core: 370000 rects
+caravel_core: 380000 rects
+caravel_core: 390000 rects
+caravel_core: 400000 rects
+caravel_core: 410000 rects
+caravel_core: 420000 rects
+caravel_core: 430000 rects
+caravel_core: 440000 rects
+caravel_core: 450000 rects
+caravel_core: 460000 rects
+caravel_core: 470000 rects
+caravel_core: 480000 rects
+caravel_core: 490000 rects
+caravel_core: 500000 rects
+caravel_core: 510000 rects
+caravel_core: 520000 rects
+caravel_core: 530000 rects
+caravel_core: 540000 rects
+caravel_core: 550000 rects
+caravel_core: 560000 rects
+caravel_core: 570000 rects
+caravel_core: 580000 rects
+caravel_core: 590000 rects
+caravel_core: 600000 rects
+caravel_core: 610000 rects
+caravel_core: 620000 rects
+caravel_core: 630000 rects
+caravel_core: 640000 rects
+caravel_core: 650000 rects
+caravel_core: 660000 rects
+caravel_core: 670000 rects
+caravel_core: 680000 rects
+caravel_core: 690000 rects
+caravel_core: 700000 rects
+caravel_core: 710000 rects
+caravel_core: 720000 rects
+caravel_core: 730000 rects
+caravel_core: 740000 rects
+caravel_core: 750000 rects
+caravel_core: 760000 rects
+caravel_core: 770000 rects
+caravel_core: 780000 rects
+caravel_core: 790000 rects
+caravel_core: 800000 rects
+caravel_core: 810000 rects
+caravel_core: 820000 rects
+caravel_core: 830000 rects
+caravel_core: 840000 rects
+caravel_core: 850000 rects
+caravel_core: 860000 rects
+caravel_core: 870000 rects
+caravel_core: 880000 rects
+caravel_core: 890000 rects
+caravel_core: 900000 rects
+caravel_core: 910000 rects
+caravel_core: 920000 rects
+caravel_core: 930000 rects
+caravel_core: 940000 rects
+caravel_core: 950000 rects
+caravel_core: 960000 rects
+caravel_core: 970000 rects
+caravel_core: 980000 rects
+caravel_core: 990000 rects
+caravel_core: 1000000 rects
+caravel_core: 1010000 rects
+caravel_core: 1020000 rects
+caravel_core: 1030000 rects
+caravel_core: 1040000 rects
+caravel_core: 1050000 rects
+caravel_core: 1060000 rects
+caravel_core: 1070000 rects
+caravel_core: 1080000 rects
+caravel_core: 1090000 rects
+caravel_core: 1100000 rects
+caravel_core: 1110000 rects
+caravel_core: 1120000 rects
+caravel_core: 1130000 rects
+caravel_core: 1140000 rects
+caravel_core: 1150000 rects
+caravel_core: 1160000 rects
+caravel_core: 1170000 rects
+caravel_core: 1180000 rects
+caravel_core: 1190000 rects
+caravel_core: 1200000 rects
+caravel_core: 1210000 rects
+caravel_core: 1220000 rects
+caravel_core: 1230000 rects
+caravel_core: 1240000 rects
+caravel_core: 1250000 rects
+caravel_core: 1260000 rects
+caravel_core: 1270000 rects
+caravel_core: 1280000 rects
+caravel_core: 1290000 rects
+caravel_core: 1300000 rects
+caravel_core: 1310000 rects
+caravel_core: 1320000 rects
+caravel_core: 1330000 rects
+caravel_core: 1340000 rects
+caravel_core: 1350000 rects
+caravel_core: 1360000 rects
+caravel_core: 1370000 rects
+caravel_core: 1380000 rects
+caravel_core: 1390000 rects
+caravel_core: 1400000 rects
+caravel_core: 1410000 rects
+caravel_core: 1420000 rects
+caravel_core: 1430000 rects
+caravel_core: 1440000 rects
+caravel_core: 1450000 rects
+caravel_core: 1460000 rects
+caravel_core: 1470000 rects
+caravel_core: 1480000 rects
+caravel_core: 1490000 rects
+caravel_core: 1500000 rects
+caravel_core: 1510000 rects
+caravel_core: 1520000 rects
+caravel_core: 1530000 rects
+caravel_core: 1540000 rects
+caravel_core: 1550000 rects
+caravel_core: 1560000 rects
+caravel_core: 1570000 rects
+caravel_core: 1580000 rects
+caravel_core: 1590000 rects
+caravel_core: 1600000 rects
+caravel_core: 1610000 rects
+caravel_core: 1620000 rects
+caravel_core: 1630000 rects
+caravel_core: 1640000 rects
+caravel_core: 1650000 rects
+caravel_core: 1660000 rects
+caravel_core: 1670000 rects
+caravel_core: 1680000 rects
+caravel_core: 1690000 rects
+caravel_core: 1700000 rects
+caravel_core: 1710000 rects
+caravel_core: 1720000 rects
+caravel_core: 1730000 rects
+caravel_core: 1740000 rects
+caravel_core: 1750000 rects
+caravel_core: 1760000 rects
+caravel_core: 1770000 rects
+caravel_core: 1780000 rects
+caravel_core: 1790000 rects
+caravel_core: 1800000 rects
+caravel_core: 1810000 rects
+caravel_core: 1820000 rects
+caravel_core: 1830000 rects
+caravel_core: 1840000 rects
+caravel_core: 1850000 rects
+caravel_core: 1860000 rects
+caravel_core: 1870000 rects
+caravel_core: 1880000 rects
+caravel_core: 1890000 rects
+caravel_core: 1900000 rects
+caravel_core: 1910000 rects
+caravel_core: 1920000 rects
+caravel_core: 1930000 rects
+caravel_core: 1940000 rects
+caravel_core: 1950000 rects
+caravel_core: 1960000 rects
+caravel_core: 1970000 rects
+caravel_core: 1980000 rects
+caravel_core: 1990000 rects
+caravel_core: 2000000 rects
+caravel_core: 2010000 rects
+caravel_core: 2020000 rects
+caravel_core: 2030000 rects
+caravel_core: 2040000 rects
+caravel_core: 2050000 rects
+caravel_core: 2060000 rects
+caravel_core: 2070000 rects
+caravel_core: 2080000 rects
+caravel_core: 2090000 rects
+caravel_core: 2100000 rects
+caravel_core: 2110000 rects
+caravel_core: 2120000 rects
+caravel_core: 2130000 rects
+caravel_core: 2140000 rects
+caravel_core: 2150000 rects
+caravel_core: 2160000 rects
+caravel_core: 2170000 rects
+caravel_core: 2180000 rects
+caravel_core: 2190000 rects
+caravel_core: 2200000 rects
+caravel_core: 2210000 rects
+caravel_core: 2220000 rects
+caravel_core: 2230000 rects
+caravel_core: 2240000 rects
+caravel_core: 2250000 rects
+caravel_core: 2260000 rects
+Duplicate cell in caravel_core:  Instance of cell user_project_wrapper is from path /home/lrburle/OSU/MPW18H1/caravel_ffra/mag but cell was previously read from the current directory.
+Cell name conflict:  Renaming original cell to user_project_wrapper#0.
+Warning:  Renaming read-only cell "user_project_wrapper"
+Read-only status will be revoked and GDS file pointer removed.
+Duplicate cell in caravel_core:  Instance of cell simple_por is from path /home/lrburle/OSU/MPW18H1/caravel_ffra/mag but cell was previously read from /home/lrburle/OSU/MPW18H1/caravel_ffra/caravel/macros/simple_por/maglef.
+New path does not exist and will be ignored.
+Processing timestamp mismatches: user_id_programmingWarning:  Parent cell lists instance of "spare_logic_block" at bad file path /home/lrburle/OSU/MPW18H1/caravel_ffra/mag/spare_logic_block.mag.
+The cell exists in the search paths at spare_logic_block.mag.
+The discovered version will be used.
+, spare_logic_blockWarning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__tiel" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__tiel.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__tiel.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__tielWarning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__tieh" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__tieh.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__tieh.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__tiehWarning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__filltie" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__filltie.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__filltie.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__filltieWarning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__endcap" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__endcap.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__endcap.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__endcapWarning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__fillcap_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fillcap_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fillcap_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__fillcap_4Warning:  Parent cell lists instance of "gf180_ram_512x8_wrapper" at bad file path /home/lrburle/OSU/MPW18H1/caravel_ffra/mag/gf180_ram_512x8_wrapper.mag.
+The cell exists in the search paths at /home/lrburle/OSU/MPW18H1/caravel_ffra/mgmt_core_wrapper/mag/gf180_ram_512x8_wrapper.mag.
+The discovered version will be used.
+gf180_ram_512x8_wrapper: 10000 rects
+, gf180_ram_512x8_wrapper, simple_porScaled magic input cell user_project_wrapper geometry by factor of 2
+user_project_wrapper: 10000 rects
+user_project_wrapper: 20000 rects
+user_project_wrapper: 30000 rects
+user_project_wrapper: 40000 rects
+user_project_wrapper: 50000 rects
+user_project_wrapper: 60000 rects
+user_project_wrapper: 70000 rects
+user_project_wrapper: 80000 rects
+user_project_wrapper: 90000 rects
+user_project_wrapper: 100000 rects
+user_project_wrapper: 110000 rects
+user_project_wrapper: 120000 rects
+user_project_wrapper: 130000 rects
+, user_project_wrapperffra: 10000 rects
+ffra: 20000 rects
+ffra: 30000 rects
+ffra: 40000 rects
+ffra: 50000 rects
+ffra: 60000 rects
+ffra: 70000 rects
+ffra: 80000 rects
+ffra: 90000 rects
+ffra: 100000 rects
+ffra: 110000 rects
+ffra: 120000 rects
+ffra: 130000 rects
+ffra: 140000 rects
+ffra: 150000 rects
+ffra: 160000 rects
+ffra: 170000 rects
+, ffraWarning:  Parent cell lists instance of "housekeeping" at bad file path /home/lrburle/OSU/MPW18H1/caravel_ffra/mag/housekeeping.mag.
+The cell exists in the search paths at housekeeping.mag.
+The discovered version will be used.
+housekeeping: 10000 rects
+housekeeping: 20000 rects
+housekeeping: 30000 rects
+housekeeping: 40000 rects
+housekeeping: 50000 rects
+housekeeping: 60000 rects
+housekeeping: 70000 rects
+housekeeping: 80000 rects
+housekeeping: 90000 rects
+housekeeping: 100000 rects
+housekeeping: 110000 rects
+housekeeping: 120000 rects
+housekeeping: 130000 rects
+housekeeping: 140000 rects
+housekeeping: 150000 rects
+housekeeping: 160000 rects
+housekeeping: 170000 rects
+housekeeping: 180000 rects
+housekeeping: 190000 rects
+housekeeping: 200000 rects
+housekeeping: 210000 rects
+housekeeping: 220000 rects
+housekeeping: 230000 rects
+housekeeping: 240000 rects
+housekeeping: 250000 rects
+housekeeping: 260000 rects
+housekeeping: 270000 rects
+housekeeping: 280000 rects
+housekeeping: 290000 rects
+housekeeping: 300000 rects
+housekeeping: 310000 rects
+housekeeping: 320000 rects
+housekeeping: 330000 rects
+housekeeping: 340000 rects
+housekeeping: 350000 rects
+Duplicate cell in housekeeping:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in housekeeping:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__endcap is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in housekeeping:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__filltie is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in housekeeping:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__tieh is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+, housekeepingWarning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__buf_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__buf_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__buf_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__buf_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__clkbuf_1" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkbuf_1.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__clkbuf_1Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__clkinv_1" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkinv_1.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkinv_1.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__clkinv_1Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__clkbuf_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkbuf_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkbuf_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__clkbuf_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__clkbuf_2" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkbuf_2.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__clkbuf_2Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__clkbuf_3" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkbuf_3.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkbuf_3.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__clkbuf_3Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__dlyb_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dlyb_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dlyb_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__dlyb_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkbuf_8.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__clkbuf_8Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__buf_8" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__buf_8.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__buf_8.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__buf_8Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__clkbuf_12" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkbuf_12.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkbuf_12.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__clkbuf_12Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__dffrnq_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffrnq_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__dffrnq_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__dffrnq_2" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffrnq_2.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__dffrnq_2Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffrnq_1.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__dffrnq_1Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__dffq_1" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffq_1.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffq_1.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__dffq_1Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffsnq_1.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffsnq_1.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__dffsnq_1Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__dffsnq_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffsnq_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffsnq_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__dffsnq_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__dffsnq_2" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffsnq_2.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__dffsnq_2.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__dffsnq_2Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__and2_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__and2_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__and2_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__and2_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__mux2_2" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__mux2_2.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__mux2_2.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__mux2_2Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__nor2_2" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__nor2_2.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__nor2_2.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__nor2_2Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__oai21_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai21_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai21_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__oai21_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__aoi222_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__aoi222_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__aoi222_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__aoi222_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__nand2_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__nand2_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__nand2_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__nand2_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__aoi221_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__aoi221_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__aoi221_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__aoi221_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__aoi22_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__aoi22_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__aoi22_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__aoi22_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__aoi21_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__aoi21_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__aoi21_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__aoi21_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__and3_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__and3_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__and3_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__and3_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__oai32_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai32_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai32_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__oai32_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__nand3_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__nand3_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__nand3_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__nand3_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__nor2_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__nor2_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__nor2_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__nor2_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__oai211_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai211_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai211_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__oai211_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__oai31_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai31_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai31_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__oai31_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__or2_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__or2_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__or2_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__or2_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__oai22_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai22_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai22_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__oai22_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__xor2_1" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__xor2_1.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__xor2_1.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__xor2_1Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__aoi211_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__aoi211_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__aoi211_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__aoi211_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__oai221_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai221_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai221_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__oai221_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__clkinv_2" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkinv_2.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkinv_2.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__clkinv_2Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__inv_1" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__inv_1.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__inv_1.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__inv_1Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__oai222_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai222_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__oai222_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__oai222_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__mux2_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__mux2_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__mux2_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__mux2_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__inv_2" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__inv_2.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__inv_2.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__inv_2Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__xor2_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__xor2_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__xor2_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__xor2_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__xor2_2" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__xor2_2.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__xor2_2.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__xor2_2Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__xnor2_2" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__xnor2_2.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__xnor2_2.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__xnor2_2Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__inv_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__inv_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__inv_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__inv_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__xnor2_1" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__xnor2_1.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__xnor2_1.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__xnor2_1Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__clkinv_4" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkinv_4.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkinv_4.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__clkinv_4Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__clkinv_3" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkinv_3.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkinv_3.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__clkinv_3Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__clkinv_8" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkinv_8.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__clkinv_8.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__clkinv_8Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__inv_3" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__inv_3.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__inv_3.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__inv_3Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__fill_2" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fill_2.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fill_2.mag.
+The discovered version will be used.
+Scaled magic input cell gf180mcu_fd_sc_mcu7t5v0__fill_2 geometry by factor of 2
+, gf180mcu_fd_sc_mcu7t5v0__fill_2Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__fill_1" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fill_1.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fill_1.mag.
+The discovered version will be used.
+Scaled magic input cell gf180mcu_fd_sc_mcu7t5v0__fill_1 geometry by factor of 2
+, gf180mcu_fd_sc_mcu7t5v0__fill_1Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__fillcap_8" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fillcap_8.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fillcap_8.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__fillcap_8Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__fillcap_16" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fillcap_16.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fillcap_16.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__fillcap_16Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__fillcap_32" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fillcap_32.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fillcap_32.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__fillcap_32Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__fillcap_64" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fillcap_64.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__fillcap_64.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__fillcap_64Warning:  Parent cell lists instance of "gf180mcu_fd_sc_mcu7t5v0__antenna" at bad file path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__antenna.mag.
+The cell exists in the search paths at /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag/gf180mcu_fd_sc_mcu7t5v0__antenna.mag.
+The discovered version will be used.
+, gf180mcu_fd_sc_mcu7t5v0__antennaDuplicate cell in gpio_defaults_block_008:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__endcap is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_008:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_008:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__filltie is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_008:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__tieh is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_008:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__tiel is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+, gpio_defaults_block_008Duplicate cell in gpio_defaults_block_007:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__endcap is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_007:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_007:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__filltie is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_007:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__tieh is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_007:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__tiel is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+, gpio_defaults_block_007Duplicate cell in gpio_defaults_block_087:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__endcap is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_087:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_087:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__filltie is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_087:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__tieh is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_087:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__tiel is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+, gpio_defaults_block_087Duplicate cell in gpio_defaults_block_009:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__endcap is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_009:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_009:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__filltie is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_009:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__tieh is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in gpio_defaults_block_009:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__tiel is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+, gpio_defaults_block_009Warning:  Parent cell lists instance of "mprj_io_buffer" at bad file path /home/lrburle/OSU/MPW18H1/caravel_ffra/mag/mprj_io_buffer.mag.
+The cell exists in the search paths at mprj_io_buffer.mag.
+The discovered version will be used.
+Duplicate cell in mprj_io_buffer:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__antenna is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in mprj_io_buffer:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__clkbuf_8 is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in mprj_io_buffer:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__fill_2 is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in mprj_io_buffer:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__fill_1 is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in mprj_io_buffer:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__fillcap_8 is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in mprj_io_buffer:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in mprj_io_buffer:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__fillcap_16 is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in mprj_io_buffer:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__fillcap_32 is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in mprj_io_buffer:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__endcap is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+Duplicate cell in mprj_io_buffer:  Instance of cell gf180mcu_fd_sc_mcu7t5v0__filltie is from path /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag but cell was previously read from /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_sc_mcu7t5v0/mag.
+New path does not exist and will be ignored.
+, mprj_io_buffer.
+Processing timestamp mismatches: user_id_textblock, chip_io, open_source, copyright_block, caravel_corecaravel_power_routing: 10000 rects
+caravel_power_routing: 20000 rects
+caravel_power_routing: 30000 rects
+caravel_power_routing: 40000 rects
+caravel_power_routing: 50000 rects
+caravel_power_routing: 60000 rects
+caravel_power_routing: 70000 rects
+caravel_power_routing: 80000 rects
+caravel_power_routing: 90000 rects
+caravel_power_routing: 100000 rects
+caravel_power_routing: 110000 rects
+, caravel_power_routingScaled magic input cell caravel_motto geometry by factor of 2
+, caravel_motto, caravel_logo.
+Scaled magic input cell font_73 geometry by factor of 2
+Scaled magic input cell font_69 geometry by factor of 2
+Scaled magic input cell font_68 geometry by factor of 2
+Scaled magic input cell font_67 geometry by factor of 2
+Scaled magic input cell font_65 geometry by factor of 2
+Scaled magic input cell font_61 geometry by factor of 2
+Scaled magic input cell font_54 geometry by factor of 2
+Scaled magic input cell font_53 geometry by factor of 2
+Scaled magic input cell font_49 geometry by factor of 2
+Scaled magic input cell font_43 geometry by factor of 2
+Scaled magic input cell font_22 geometry by factor of 2
+Scaled magic input cell font_6E geometry by factor of 2
+Scaled magic input cell font_6C geometry by factor of 2
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__buf_4 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__buf_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__buf_2 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__dff_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__clkbuf_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__xnor2_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__nor2_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__nand2_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__aoi22_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__aoi21_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__xor2_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__oai21_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__clkinv_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__oai31_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__and2_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__or2_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__oai22_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__fill_8 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__fill_16 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__fill_1 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__fill_2 geometry by factor of 10
+Scaled magic input cell gf180mcu_osu_sc_gp9t3v3__fill_4 geometry by factor of 10
+gf180mcu_fd_ip_sram__sram512x8m8wm1: 10000 rects
+gf180mcu_fd_ip_sram__sram512x8m8wm1: 20000 rects
+xdec64_512x8m81: 10000 rects
+xdec64_512x8m81: 20000 rects
+xdec64_512x8m81: 30000 rects
+xdec64_512x8m81: 40000 rects
+xdec64_512x8m81: 50000 rects
+xdec64_512x8m81: 60000 rects
+xdec64_512x8m81: 70000 rects
+xdec64_512x8m81: 80000 rects
+xdec64_512x8m81: 90000 rects
+xdec64_512x8m81: 100000 rects
+xdec64_512x8m81: 110000 rects
+xdec64_512x8m81: 120000 rects
+xdec64_512x8m81: 130000 rects
+xdec64_512x8m81: 140000 rects
+xdec64_512x8m81: 150000 rects
+Scaled magic input cell pmos_5p043105913020110_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p043105913020105_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p043105913020103_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p043105913020104_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p043105913020108_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p043105913020109_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p043105913020107_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p043105913020106_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302044_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$204401708_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$204400684_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$204399660_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$204398636_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$204147756_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201252908_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201251884_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$02_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204408876_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204407852_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204406828_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204405804_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204404780_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204403756_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204402732_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$202406956_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$202394668_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$201262124_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$46894124_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$45004844_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB_05_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$45111340_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY243105913020105_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY24310591302033_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY24310591302031_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY24310591302019_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE43105913020106_51_0 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE03_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL4310591302032_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL07_512x8m81 geometry by factor of 10
+Scaled magic input cell pmoscap_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$01_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$04_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY2_01_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NACTIVE_01_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p043105913020101_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p043105913020100_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p043105913020111_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302099_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p043105913020102_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$204146732_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$204145708_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$204144684_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$204143660_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$204142636_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204222508_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204221484_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204220460_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204141612_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204140588_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204139564_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$204138540_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY2$$204150828_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE$11_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE$10_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL_01_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NACTIVE_02_512x8m81 geometry by factor of 10
+saout_m2_512x8m81: 10000 rects
+Scaled magic input cell pmos_5p04310591302043_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302041_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302035_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302020_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302014_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302042_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302040_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302039_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302010_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p0431059130208_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302036_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$202397740_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302035_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$202396716_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$202395692_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE4310591302027_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NACTIVE_01_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NACTIVE4310591302037_512x8m81 geometry by factor of 10
+Scaled magic input cell via2_x2_512x8m81 geometry by factor of 10
+Scaled magic input cell via2_512x8m81 geometry by factor of 10
+Scaled magic input cell via1_x2_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell via1_x2_512x8m81 geometry by factor of 10
+Scaled magic input cell via2_x2_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell via1_x2_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell via1_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell po_m1_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302038_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302027_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302031_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302013_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302022_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302024_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302025_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302030_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302034_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302033_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302032_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302028_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302023_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302012_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302037_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302026_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302036_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302029_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$45008940_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$45006892_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$45005868_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1c$$203396140_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$45003820_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$45002796_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$43374636_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB_285_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$44997676_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY2$$45109292_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY2$$44754988_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY2$$44753964_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE4310591302034_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL04_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL03_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL02_512x8m81 geometry by factor of 10
+Scaled magic input cell via1_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell via1_512x8m81 geometry by factor of 10
+Scaled magic input cell via2_x2_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302019_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302021_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302018_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302015_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302016_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302017_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$43371564_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB_04_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$46558252_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$46557228_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$46556204_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$46555180_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL_01_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL06_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302051_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302049_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302048_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302047_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p0431059130203_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302052_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302050_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302046_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302045_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2431059130207_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1431059130200_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$168351788_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB_02_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE4310591302040_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE4310591302039_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL_01_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NACTIVE4310591302041_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NACTIVE4310591302038_512x8m81 geometry by factor of 10
+Scaled magic input cell via2_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p0431059130201_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p0431059130202_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p0431059130200_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2431059130201_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302020_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1431059130208_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$47122476_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY24310591302030_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL09_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL05_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302029_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302018_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NACTIVE4310591302028_512x8m81 geometry by factor of 10
+Scaled magic input cell po_m1_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell po_m1_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p0431059130209_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p0431059130206_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p0431059130204_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302011_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p0431059130207_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p0431059130205_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$46895148_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$43368492_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$43375660_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$46893100_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$46892076_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL08_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302026_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$44741676_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$43370540_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302025_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$45013036_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$45012012_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NACTIVE4310591302024_512x8m81 geometry by factor of 10
+saout_R_m2_512x8m81: 10000 rects
+Scaled magic input cell via2_R90_512x8m81_0 geometry by factor of 10
+Scaled magic input cell via1_x2_R90_512x8m81_0 geometry by factor of 10
+Scaled magic input cell via1_R270_512x8m81_0 geometry by factor of 10
+Scaled magic input cell via1_R90_512x8m81_0 geometry by factor of 10
+Scaled magic input cell M3_M2$$43368492_512x8m81_0 geometry by factor of 10
+Scaled magic input cell M2_M1$$46894124_512x8m81_0 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$45111340_512x8m81_0 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE4310591302075_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL$$47121452_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL$$46277676_512x8m81 geometry by factor of 10
+Scaled magic input cell via2_x2_R270_512x8m81_0 geometry by factor of 10
+Scaled magic input cell via1_x2_R270_512x8m81_0 geometry by factor of 10
+Scaled magic input cell via2_x2_R90_512x8m81_0 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302097_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302095_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302098_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302096_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$47117356_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$43375660_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$46274604_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY2$$46559276_512x8m81_0 geometry by factor of 10
+Scaled magic input cell M1_NWELL$$44998700_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302021_512x8m81 geometry by factor of 10
+Scaled magic input cell 018SRAM_cell1_2x_512x8m81 geometry by factor of 2
+Scaled magic input cell 018SRAM_strap1_2x_512x8m81 geometry by factor of 2
+Scaled magic input cell dcap_103_novia_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302023_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302022_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201416748_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M243105913020102_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302095_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302097_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M243105913020101_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M243105913020100_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302099_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302098_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302096_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302094_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302091_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302090_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302089_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302088_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302086_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302085_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302084_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302083_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302082_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302042_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302093_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302092_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302087_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302081_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302080_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302016_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302017_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2431059130206_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302012_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M243105913020104_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M143105913020103_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2431059130205_512x8m81 geometry by factor of 10
+Scaled magic input cell Cell_array8x8_512x8m81 geometry by factor of 2
+Scaled magic input cell 018SRAM_strap1_2x_bndry_512x8m81 geometry by factor of 2
+control_512x8_512x8m81: 10000 rects
+control_512x8_512x8m81: 20000 rects
+control_512x8_512x8m81: 30000 rects
+control_512x8_512x8m81: 40000 rects
+control_512x8_512x8m81: 50000 rects
+control_512x8_512x8m81: 60000 rects
+control_512x8_512x8m81: 70000 rects
+Scaled magic input cell pmos_5p04310591302055_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302054_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302053_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302056_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302055_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302054_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302052_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302060_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302061_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$47819820_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$47333420_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$47332396_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$47108140_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$47515692_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$43380780_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$43379756_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$43378732_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302058_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302057_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302057_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302058_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302059_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$47333420_150_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$47108140_149_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$43368492_151_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1_154_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$43380780_152_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$43379756_153_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$45110316_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY2_155_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$47334444_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$43368492_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$43377708_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$34864172_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$47818796_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY2$$46559276_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL14_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302062_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302056_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302053_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$47633452_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$47632428_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$43368492_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302051_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$47631404_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$47630380_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$47114284_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL13_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL12_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302068_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302072_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$47327276_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$43376684_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY24310591302060_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302070_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302071_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$47335468_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL10_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY2_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302067_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$47644716_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$47640620_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$47500332_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY24310591302059_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302063_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302064_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302066_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302065_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$47645740_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL11_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302069_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE_02_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201412652_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$47115308_512x8m81 geometry by factor of 10
+gen_512x8_512x8m81: 10000 rects
+gen_512x8_512x8m81: 20000 rects
+Scaled magic input cell pmos_5p04310591302082_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302080_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302079_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302077_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302081_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302078_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302076_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302075_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302072_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302050_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201255980_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302074_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302073_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE4310591302071_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE4310591302069_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NACTIVE4310591302070_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302094_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302092_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302089_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302088_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302074_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302091_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302073_512x8m81 geometry by factor of 10
+Scaled magic input cell pmos_5p04310591302087_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302093_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302090_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302083_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302084_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302085_512x8m81 geometry by factor of 10
+Scaled magic input cell nmos_5p04310591302086_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302064_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$169756716_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$169755692_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$169753644_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$48231468_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$48229420_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$48228396_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$48227372_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$48066604_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302065_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1_01_R270_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$199746604_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$170064940_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$170063916_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$170061868_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$168351788_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$48316460_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$48224300_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$48222252_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$48221228_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$48220204_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$48219180_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$48218156_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$48217132_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$34864172_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB_03_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB_03_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB_02_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB$$48312364_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY24310591302067_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY24310591302066_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY24310591302062_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_POLY24310591302061_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE_03_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE_02_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE_01_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE4310591302068_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE06_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE02_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE01_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL_03_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL_02_R90_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL17_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL16_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NWELL01_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NACTIVE4310591302063_512x8m81 geometry by factor of 10
+Scaled magic input cell CON_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201401388_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$202405932_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE4310591302049_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PACTIVE4310591302048_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_NACTIVE4310591302047_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302015_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302013_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302011_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2431059130209_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2431059130202_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201415724_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201414700_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201413676_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201258028_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201254956_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201253932_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201250860_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201249836_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M2$$201248812_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1431059130204_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1431059130203_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$201261100_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$201260076_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M1$$199747628_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB4310591302014_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB4310591302010_512x8m81 geometry by factor of 10
+G_ring_512x8m81: 10000 rects
+Scaled magic input cell M1_PSUB4310591302046_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB4310591302045_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB4310591302044_512x8m81 geometry by factor of 10
+Scaled magic input cell M1_PSUB4310591302043_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302079_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302078_512x8m81 geometry by factor of 10
+Scaled magic input cell M3_M24310591302077_512x8m81 geometry by factor of 10
+Scaled magic input cell M2_M14310591302076_512x8m81 geometry by factor of 10
+Scaled magic input cell font_76 geometry by factor of 2
+Scaled magic input cell font_75 geometry by factor of 2
+Scaled magic input cell font_72 geometry by factor of 2
+Scaled magic input cell font_70 geometry by factor of 2
+Scaled magic input cell font_66 geometry by factor of 2
+Scaled magic input cell font_64 geometry by factor of 2
+Scaled magic input cell font_63 geometry by factor of 2
+Scaled magic input cell font_62 geometry by factor of 2
+Scaled magic input cell font_50 geometry by factor of 2
+Scaled magic input cell font_47 geometry by factor of 2
+Scaled magic input cell font_46 geometry by factor of 2
+Scaled magic input cell font_45 geometry by factor of 2
+Scaled magic input cell font_44 geometry by factor of 2
+Scaled magic input cell font_32 geometry by factor of 2
+Scaled magic input cell font_30 geometry by factor of 2
+Scaled magic input cell font_29 geometry by factor of 2
+Scaled magic input cell font_28 geometry by factor of 2
+Scaled magic input cell font_6F geometry by factor of 2
+Scaled magic input cell font_4B geometry by factor of 2
+Scaled magic input cell font_2D geometry by factor of 2
+gf180mcu_fd_io__fill10: 10000 rects
+Scaled magic input cell M5_M4_CDNS_406619531451 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_406619531450 geometry by factor of 10
+GF_NI_FILL10_0: 10000 rects
+Scaled magic input cell M4_M3_CDNS_406619531453 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_406619531452 geometry by factor of 10
+Scaled magic input cell M3_M2_CDNS_4066195314510 geometry by factor of 10
+Scaled magic input cell M3_M2_CDNS_406619531459 geometry by factor of 10
+Scaled magic input cell M3_M2_CDNS_406619531457 geometry by factor of 10
+Scaled magic input cell M3_M2_CDNS_406619531456 geometry by factor of 10
+Scaled magic input cell M2_M1_CDNS_406619531454 geometry by factor of 10
+Scaled magic input cell M1_PSUB_CDNS_406619531458 geometry by factor of 10
+Scaled magic input cell M1_PSUB_CDNS_406619531455 geometry by factor of 10
+POWER_RAIL_COR: 10000 rects
+POWER_RAIL_COR: 20000 rects
+POWER_RAIL_COR: 30000 rects
+POWER_RAIL_COR: 40000 rects
+POWER_RAIL_COR: 50000 rects
+POWER_RAIL_COR: 60000 rects
+POWER_RAIL_COR: 70000 rects
+POWER_RAIL_COR: 80000 rects
+POWER_RAIL_COR: 90000 rects
+POWER_RAIL_COR: 100000 rects
+POWER_RAIL_COR: 110000 rects
+POWER_RAIL_COR: 120000 rects
+POWER_RAIL_COR: 130000 rects
+POWER_RAIL_COR: 140000 rects
+POWER_RAIL_COR: 150000 rects
+POWER_RAIL_COR: 160000 rects
+POWER_RAIL_COR: 170000 rects
+POWER_RAIL_COR: 180000 rects
+POWER_RAIL_COR: 190000 rects
+POWER_RAIL_COR: 200000 rects
+POWER_RAIL_COR: 210000 rects
+POWER_RAIL_COR: 220000 rects
+POWER_RAIL_COR: 230000 rects
+POWER_RAIL_COR: 240000 rects
+POWER_RAIL_COR: 250000 rects
+POWER_RAIL_COR: 260000 rects
+POWER_RAIL_COR: 270000 rects
+POWER_RAIL_COR: 280000 rects
+POWER_RAIL_COR: 290000 rects
+POWER_RAIL_COR: 300000 rects
+POWER_RAIL_COR: 310000 rects
+POWER_RAIL_COR: 320000 rects
+POWER_RAIL_COR: 330000 rects
+POWER_RAIL_COR: 340000 rects
+POWER_RAIL_COR: 350000 rects
+POWER_RAIL_COR: 360000 rects
+POWER_RAIL_COR: 370000 rects
+POWER_RAIL_COR: 380000 rects
+POWER_RAIL_COR: 390000 rects
+POWER_RAIL_COR: 400000 rects
+POWER_RAIL_COR: 410000 rects
+POWER_RAIL_COR: 420000 rects
+POWER_RAIL_COR: 430000 rects
+POWER_RAIL_COR: 440000 rects
+POWER_RAIL_COR: 450000 rects
+POWER_RAIL_COR: 460000 rects
+POWER_RAIL_COR: 470000 rects
+POWER_RAIL_COR: 480000 rects
+POWER_RAIL_COR: 490000 rects
+POWER_RAIL_COR: 500000 rects
+POWER_RAIL_COR: 510000 rects
+Scaled magic input cell M5_M4_CDNS_40661953145532 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145531 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145530 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145505 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145504 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145503 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145493 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145506 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145507 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145508 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145509 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145510 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145511 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145512 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145513 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145514 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145515 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145516 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145501 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145517 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145518 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145519 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145495 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145496 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145441 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145462 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145468 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145469 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145470 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145484 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145485 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145460 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145443 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145487 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145459 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145456 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145454 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145497 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145498 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145499 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145500 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145533 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145534 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145535 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145536 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145537 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145538 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145539 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145540 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145541 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145458 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145440 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145463 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145415 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145461 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145444 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145457 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145488 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145486 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145448 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145452 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145525 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145524 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145523 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145522 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145521 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145520 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145502 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145483 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145482 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145480 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145479 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145467 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145450 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145478 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145477 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145476 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145475 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145474 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145473 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145494 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145472 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145471 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145436 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145529 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145528 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145527 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145526 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145481 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145446 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145445 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145442 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145425 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145435 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145433 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145434 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145455 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145432 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145430 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145431 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145451 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145429 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145453 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145439 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145427 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145492 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145449 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145447 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145417 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145423 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145419 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145428 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145438 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145416 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145422 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145421 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145420 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145437 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145491 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145490 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145489 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145466 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145465 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145464 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145426 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145424 geometry by factor of 10
+Scaled magic input cell M5_M4_CDNS_40661953145418 geometry by factor of 10
+POWER_RAIL_COR_0: 10000 rects
+POWER_RAIL_COR_0: 20000 rects
+POWER_RAIL_COR_0: 30000 rects
+POWER_RAIL_COR_0: 40000 rects
+POWER_RAIL_COR_0: 50000 rects
+POWER_RAIL_COR_0: 60000 rects
+POWER_RAIL_COR_0: 70000 rects
+POWER_RAIL_COR_0: 80000 rects
+POWER_RAIL_COR_0: 90000 rects
+POWER_RAIL_COR_0: 100000 rects
+POWER_RAIL_COR_0: 110000 rects
+POWER_RAIL_COR_0: 120000 rects
+POWER_RAIL_COR_0: 130000 rects
+POWER_RAIL_COR_0: 140000 rects
+POWER_RAIL_COR_0: 150000 rects
+POWER_RAIL_COR_0: 160000 rects
+POWER_RAIL_COR_0: 170000 rects
+POWER_RAIL_COR_0: 180000 rects
+POWER_RAIL_COR_0: 190000 rects
+POWER_RAIL_COR_0: 200000 rects
+POWER_RAIL_COR_0: 210000 rects
+POWER_RAIL_COR_0: 220000 rects
+POWER_RAIL_COR_0: 230000 rects
+POWER_RAIL_COR_0: 240000 rects
+POWER_RAIL_COR_0: 250000 rects
+POWER_RAIL_COR_0: 260000 rects
+POWER_RAIL_COR_0: 270000 rects
+POWER_RAIL_COR_0: 280000 rects
+POWER_RAIL_COR_0: 290000 rects
+POWER_RAIL_COR_0: 300000 rects
+POWER_RAIL_COR_0: 310000 rects
+POWER_RAIL_COR_0: 320000 rects
+POWER_RAIL_COR_0: 330000 rects
+POWER_RAIL_COR_0: 340000 rects
+POWER_RAIL_COR_0: 350000 rects
+POWER_RAIL_COR_0: 360000 rects
+POWER_RAIL_COR_0: 370000 rects
+POWER_RAIL_COR_0: 380000 rects
+POWER_RAIL_COR_0: 390000 rects
+POWER_RAIL_COR_0: 400000 rects
+POWER_RAIL_COR_0: 410000 rects
+POWER_RAIL_COR_0: 420000 rects
+POWER_RAIL_COR_0: 430000 rects
+POWER_RAIL_COR_0: 440000 rects
+POWER_RAIL_COR_0: 450000 rects
+POWER_RAIL_COR_0: 460000 rects
+POWER_RAIL_COR_0: 470000 rects
+POWER_RAIL_COR_0: 480000 rects
+POWER_RAIL_COR_0: 490000 rects
+POWER_RAIL_COR_0: 500000 rects
+POWER_RAIL_COR_0: 510000 rects
+POWER_RAIL_COR_0: 520000 rects
+Scaled magic input cell M4_M3_CDNS_40661953145615 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145614 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145554 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145551 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145550 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145549 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145548 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145610 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145611 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145612 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145613 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145606 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145607 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145608 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145609 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145603 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145604 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145605 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145599 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145600 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145601 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145602 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145552 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145598 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145571 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145573 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145580 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145581 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145584 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145585 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145579 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145586 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145578 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145588 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145590 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145592 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145546 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145544 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145555 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145561 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145593 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145594 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145595 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145596 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145597 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145616 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145646 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145647 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145648 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145649 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145583 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145582 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145572 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145574 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145587 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145589 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145591 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145556 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145543 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145558 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145542 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145650 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145570 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145569 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145568 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145567 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145566 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145656 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145655 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145654 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145653 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145652 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145651 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145617 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145662 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145661 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145660 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145659 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145658 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145657 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145666 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145665 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145664 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145663 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145577 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145565 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145564 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145563 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145562 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145619 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145621 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145623 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145625 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145629 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145627 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145631 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145545 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145635 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145633 geometry by factor of 10
+Scaled magic input cell M4_M3_CDNS_40661953145547 geometry by factor of 10
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145557.mag couldn't be read
+Cell M4_M3_CDNS_40661953145557 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145553.mag couldn't be read
+Cell M4_M3_CDNS_40661953145553 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145559.mag couldn't be read
+Cell M4_M3_CDNS_40661953145559 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145560.mag couldn't be read
+Cell M4_M3_CDNS_40661953145560 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145618.mag couldn't be read
+Cell M4_M3_CDNS_40661953145618 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145637.mag couldn't be read
+Cell M4_M3_CDNS_40661953145637 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145620.mag couldn't be read
+Cell M4_M3_CDNS_40661953145620 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145624.mag couldn't be read
+Cell M4_M3_CDNS_40661953145624 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145622.mag couldn't be read
+Cell M4_M3_CDNS_40661953145622 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145628.mag couldn't be read
+Cell M4_M3_CDNS_40661953145628 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145626.mag couldn't be read
+Cell M4_M3_CDNS_40661953145626 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145630.mag couldn't be read
+Cell M4_M3_CDNS_40661953145630 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145634.mag couldn't be read
+Cell M4_M3_CDNS_40661953145634 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145632.mag couldn't be read
+Cell M4_M3_CDNS_40661953145632 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00025.mag couldn't be read
+Cell polygon00025 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00026.mag couldn't be read
+Cell polygon00026 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145636.mag couldn't be read
+Cell M4_M3_CDNS_40661953145636 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145640.mag couldn't be read
+Cell M4_M3_CDNS_40661953145640 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145638.mag couldn't be read
+Cell M4_M3_CDNS_40661953145638 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145642.mag couldn't be read
+Cell M4_M3_CDNS_40661953145642 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00022.mag couldn't be read
+Cell polygon00022 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00023.mag couldn't be read
+Cell polygon00023 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00024.mag couldn't be read
+Cell polygon00024 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145668.mag couldn't be read
+Cell M4_M3_CDNS_40661953145668 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145667.mag couldn't be read
+Cell M4_M3_CDNS_40661953145667 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145645.mag couldn't be read
+Cell M4_M3_CDNS_40661953145645 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145644.mag couldn't be read
+Cell M4_M3_CDNS_40661953145644 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145643.mag couldn't be read
+Cell M4_M3_CDNS_40661953145643 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145641.mag couldn't be read
+Cell M4_M3_CDNS_40661953145641 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145639.mag couldn't be read
+Cell M4_M3_CDNS_40661953145639 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145576.mag couldn't be read
+Cell M4_M3_CDNS_40661953145576 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/M4_M3_CDNS_40661953145575.mag couldn't be read
+Cell M4_M3_CDNS_40661953145575 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/POWER_RAIL_COR_1.mag couldn't be read
+Cell POWER_RAIL_COR_1 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00016.mag couldn't be read
+Cell polygon00016 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00017.mag couldn't be read
+Cell polygon00017 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00018.mag couldn't be read
+Cell polygon00018 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00019.mag couldn't be read
+Cell polygon00019 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00020.mag couldn't be read
+Cell polygon00020 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00021.mag couldn't be read
+Cell polygon00021 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00027.mag couldn't be read
+Cell polygon00027 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00028.mag couldn't be read
+Cell polygon00028 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00029.mag couldn't be read
+Cell polygon00029 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00030.mag couldn't be read
+Cell polygon00030 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00031.mag couldn't be read
+Cell polygon00031 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/polygon00032.mag couldn't be read
+Cell polygon00032 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/GF_NI_COR_BASE.mag couldn't be read
+Cell GF_NI_COR_BASE is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/gf180mcu_fd_io__dvss.mag couldn't be read
+Cell gf180mcu_fd_io__dvss is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/gf180mcu_fd_io__in_s.mag couldn't be read
+Cell gf180mcu_fd_io__in_s is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/gf180mcu_fd_io__in_c.mag couldn't be read
+Cell gf180mcu_fd_io__in_c is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvss is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/gf180mcu_fd_io__bi_t.mag couldn't be read
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvss is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/gf180mcu_fd_io__dvdd.mag couldn't be read
+Cell gf180mcu_fd_io__dvdd is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/caravel_user_project/silicon-env/share/pdk/gf180mcuC/libs.ref/gf180mcu_fd_io/mag/gf180mcu_fd_io__fill5.mag couldn't be read
+Cell gf180mcu_fd_io__fill5 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145557 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145553 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145559 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145560 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145618 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145637 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145620 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145624 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145622 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145628 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145626 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145630 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145634 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145632 is unavailable.  It could not be expanded.
+Cell polygon00025 is unavailable.  It could not be expanded.
+Cell polygon00026 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145636 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145640 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145638 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145642 is unavailable.  It could not be expanded.
+Cell polygon00022 is unavailable.  It could not be expanded.
+Cell polygon00023 is unavailable.  It could not be expanded.
+Cell polygon00024 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145668 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145667 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145645 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145644 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145643 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145641 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145639 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145576 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145575 is unavailable.  It could not be expanded.
+Cell POWER_RAIL_COR_1 is unavailable.  It could not be expanded.
+Cell polygon00016 is unavailable.  It could not be expanded.
+Cell polygon00017 is unavailable.  It could not be expanded.
+Cell polygon00018 is unavailable.  It could not be expanded.
+Cell polygon00019 is unavailable.  It could not be expanded.
+Cell polygon00020 is unavailable.  It could not be expanded.
+Cell polygon00021 is unavailable.  It could not be expanded.
+Cell polygon00027 is unavailable.  It could not be expanded.
+Cell polygon00028 is unavailable.  It could not be expanded.
+Cell polygon00029 is unavailable.  It could not be expanded.
+Cell polygon00030 is unavailable.  It could not be expanded.
+Cell polygon00031 is unavailable.  It could not be expanded.
+Cell polygon00032 is unavailable.  It could not be expanded.
+Cell GF_NI_COR_BASE is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvdd is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvdd is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvss is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvss is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvdd is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvss is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvdd is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvdd is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvss is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvdd is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvdd is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvdd is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__fill5 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145557 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145553 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145559 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145560 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145618 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145637 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145620 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145624 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145622 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145628 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145626 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145630 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145634 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145632 is unavailable.  It could not be expanded.
+Cell polygon00025 is unavailable.  It could not be expanded.
+Cell polygon00026 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145636 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145640 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145638 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145642 is unavailable.  It could not be expanded.
+Cell polygon00022 is unavailable.  It could not be expanded.
+Cell polygon00023 is unavailable.  It could not be expanded.
+Cell polygon00024 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145668 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145667 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145645 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145644 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145643 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145641 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145639 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145576 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145575 is unavailable.  It could not be expanded.
+Cell POWER_RAIL_COR_1 is unavailable.  It could not be expanded.
+Cell polygon00016 is unavailable.  It could not be expanded.
+Cell polygon00017 is unavailable.  It could not be expanded.
+Cell polygon00018 is unavailable.  It could not be expanded.
+Cell polygon00019 is unavailable.  It could not be expanded.
+Cell polygon00020 is unavailable.  It could not be expanded.
+Cell polygon00021 is unavailable.  It could not be expanded.
+Cell polygon00027 is unavailable.  It could not be expanded.
+Cell polygon00028 is unavailable.  It could not be expanded.
+Cell polygon00029 is unavailable.  It could not be expanded.
+Cell polygon00030 is unavailable.  It could not be expanded.
+Cell polygon00031 is unavailable.  It could not be expanded.
+Cell polygon00032 is unavailable.  It could not be expanded.
+Cell GF_NI_COR_BASE is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__fill5 is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvss is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__dvss is unavailable.  It could not be expanded.
+Cell gf180mcu_fd_io__bi_t is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145557 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145553 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145559 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145560 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145618 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145637 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145620 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145624 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145622 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145628 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145626 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145630 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145634 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145632 is unavailable.  It could not be expanded.
+Cell polygon00025 is unavailable.  It could not be expanded.
+Cell polygon00026 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145636 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145640 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145638 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145642 is unavailable.  It could not be expanded.
+Cell polygon00022 is unavailable.  It could not be expanded.
+Cell polygon00023 is unavailable.  It could not be expanded.
+Cell polygon00024 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145668 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145667 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145645 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145644 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145643 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145641 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145639 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145576 is unavailable.  It could not be expanded.
+Cell M4_M3_CDNS_40661953145575 is unavailable.  It could not be expanded.
+Cell POWER_RAIL_COR_1 is unavailable.  It could not be expanded.
+Cell polygon00016 is unavailable.  It could not be expanded.
+Cell polygon00017 is unavailable.  It could not be expanded.
+Cell polygon00018 is unavailable.  It could not be expanded.
+Cell polygon00019 is unavailable.  It could not be expanded.
+Cell polygon00020 is unavailable.  It could not be expanded.
+Cell polygon00021 is unavailable.  It could not be expanded.
+Cell polygon00027 is unavailable.  It could not be expanded.
+Cell polygon00028 is unavailable.  It could not be expanded.
+Cell polygon00029 is unavailable.  It could not be expanded.
+Cell polygon00030 is unavailable.  It could not be expanded.
+Cell polygon00031 is unavailable.  It could not be expanded.
+Cell polygon00032 is unavailable.  It could not be expanded.
+Cell GF_NI_COR_BASE is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/MPW18H1/caravel_ffra/mag/hexdigits/alpha_1.mag couldn't be read
+Cell alpha_1 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/MPW18H1/caravel_ffra/mag/hexdigits/alpha_8.mag couldn't be read
+Cell alpha_8 is unavailable.  It could not be expanded.
+Cell alpha_1 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/MPW18H1/caravel_ffra/mag/hexdigits/alpha_0.mag couldn't be read
+Cell alpha_0 is unavailable.  It could not be expanded.
+Cell alpha_0 is unavailable.  It could not be expanded.
+Cell alpha_0 is unavailable.  It could not be expanded.
+Cell alpha_0 is unavailable.  It could not be expanded.
+File /home/lrburle/OSU/MPW18H1/caravel_ffra/mag/hexdigits/alpha_2.mag couldn't be read
+Cell alpha_2 is unavailable.  It could not be expanded.
+Processing timestamp mismatches: gf180mcu_fd_io__cor, gf180mcu_fd_io__fill10, gf180mcu_fd_sc_mcu7t5v0__inv_16, gf180mcu_fd_sc_mcu7t5v0__inv_8, gf180mcu_fd_sc_mcu7t5v0__xnor3_2, gf180mcu_fd_sc_mcu7t5v0__clkinv_16, gf180mcu_fd_sc_mcu7t5v0__clkinv_12, gf180mcu_fd_sc_mcu7t5v0__xnor2_4, gf180mcu_fd_sc_mcu7t5v0__xor3_2, gf180mcu_fd_sc_mcu7t5v0__oai33_4, gf180mcu_fd_sc_mcu7t5v0__xnor3_1, gf180mcu_fd_sc_mcu7t5v0__xor3_1, gf180mcu_fd_sc_mcu7t5v0__dffnsnq_2, gf180mcu_fd_sc_mcu7t5v0__dffnrnq_4, gf180mcu_fd_sc_mcu7t5v0__dffnsnq_4, gf180mcu_fd_sc_mcu7t5v0__dffq_4, gf180mcu_fd_sc_mcu7t5v0__dffq_2, gf180mcu_fd_sc_mcu7t5v0__dffrsnq_4, gf180mcu_fd_sc_mcu7t5v0__dffnrnq_2, gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1, gf180mcu_fd_sc_mcu7t5v0__invz_2, gf180mcu_fd_sc_mcu7t5v0__invz_8, gf180mcu_fd_sc_mcu7t5v0__invz_4, gf180mcu_fd_sc_mcu7t5v0__invz_1, gf180mcu_fd_sc_mcu7t5v0__buf_20, gf180mcu_fd_sc_mcu7t5v0__buf_16, gf180mcu_fd_sc_mcu7t5v0__clkbuf_20, gf180mcu_fd_sc_mcu7t5v0__buf_12, gf180mcu_fd_sc_mcu7t5v0__inv_12, gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2, gf180mcu_fd_sc_mcu7t5v0__nand2_2, gf180mcu_fd_ip_sram__sram512x8m8wm1, gf180mcu_fd_sc_mcu7t5v0__nor3_4, gf180mcu_fd_sc_mcu7t5v0__nand4_4, gf180mcu_fd_sc_mcu7t5v0__or3_4, gf180mcu_fd_sc_mcu7t5v0__and4_4, gf180mcu_fd_sc_mcu7t5v0__nor4_4, gf180mcu_fd_sc_mcu7t5v0__or4_4, gf180mcu_fd_sc_mcu7t5v0__clkbuf_16.
+Cannot open /home/lrburle/OSU/MPW18H1/caravel_ffra/gds/caravel_18100002.gds to write GDS-II stream output
+make[2]: Leaving directory '/home/lrburle/OSU/MPW18H1/caravel_ffra'
+Make ship completed.
+make[1]: Leaving directory '/home/lrburle/OSU/MPW18H1/caravel_ffra'
