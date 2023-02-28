@@ -161,6 +161,8 @@ jobs:
         with:
           name: precheck-results
           path: |
+            ${{ github.workspace }}/gds
+            ${{ github.workspace }}/verilog
             ${{ github.workspace }}/precheck_results/
 
   tapeout:
