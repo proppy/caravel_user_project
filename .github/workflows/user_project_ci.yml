@@ -16,7 +16,8 @@ env:
   STD_CELL_LIBRARY_OPT: gf180mcu_fd_sc_mcu7t5v0
 
 jobs:
-  tapeout:
+  gds:
+    timeout-minutes: 360
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -37,7 +38,7 @@ jobs:
       - name: setup miniconda
         uses: conda-incubator/setup-miniconda@v2.2.0
         with:
-          installer-url: https://github.com/proppy/conda-eda/releases/download/v0.0-1439-gcead5e1/mixed-signal.gf180mcuc-0-Linux-x86_64.sh
+          installer-url: https://github.com/proppy/conda-eda/releases/download/v0.0-1452-g75fd8b9/mixed-signal.gf180mcuc-0-Linux-x86_64.sh
           auto-activate-base: true
           activate-environment: ""
           channel-priority: strict
@@ -70,6 +71,80 @@ jobs:
             /home/runner/work/caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/
             /home/runner/work/caravel_user_project/caravel_user_project/gds/
 
+      - name: cache gds
+        uses: actions/cache@v3
+        with:
+          path: |
+            def/
+            gds/
+            lef/
+            mag/
+            maglef/
+            sdc/
+            sdf/
+            signoff/
+            spef/
+            spi/
+            verilog/
+          key: ${{ runner.os }}-gds-${{ github.run_id }}            
+
+  precheck:
+    needs:
+      - gds
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: cache conda
+        uses: actions/cache@v3
+        with:
+          path: ~/conda_pkgs_dir
+          key:
+            ${{ runner.os }}-${{ env.CACHE_KEY }}-conda
+
+      - name: setup miniconda
+        uses: conda-incubator/setup-miniconda@v2.2.0
+        with:
+          installer-url: https://github.com/proppy/conda-eda/releases/download/v0.0-1452-g75fd8b9/mixed-signal.gf180mcuc-0-Linux-x86_64.sh
+          auto-activate-base: true
+          activate-environment: ""
+          channel-priority: strict
+          use-only-tar-bz2: true
+
+      - name: setup env
+        run: |
+          echo $CONDA/bin >> $GITHUB_PATH
+          echo "PDK_ROOT=$CONDA/share/pdk" >> $GITHUB_ENV
+          echo "PDK=gf180mcuC" >> $GITHUB_ENV
+
+      - name: test tools
+        run: |
+          yosys --version
+          openroad -version
+          magic -dnull -noconsole --version
+          netgen -batch quit
+          klayout -zz -v
+
+      - name: restore gds cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            def/
+            gds/
+            lef/
+            mag/
+            maglef/
+            sdc/
+            sdf/
+            signoff/
+            spef/
+            spi/
+            verilog/
+          key: ${{ runner.os }}-gds-${{ github.run_id }}
+
       - name: run precheck
         run: |
           python -m pip install -r requirements.mpw_precheck.txt
@@ -82,6 +157,63 @@ jobs:
           name: precheck-results
           path: |
             /home/runner/work/caravel_user_project/caravel_user_project/precheck_results/
+
+  tapeout:
+    needs:
+      - gds
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: cache conda
+        uses: actions/cache@v3
+        with:
+          path: ~/conda_pkgs_dir
+          key:
+            ${{ runner.os }}-${{ env.CACHE_KEY }}-conda
+
+      - name: setup miniconda
+        uses: conda-incubator/setup-miniconda@v2.2.0
+        with:
+          installer-url: https://github.com/proppy/conda-eda/releases/download/v0.0-1452-g75fd8b9/mixed-signal.gf180mcuc-0-Linux-x86_64.sh
+          auto-activate-base: true
+          activate-environment: ""
+          channel-priority: strict
+          use-only-tar-bz2: true
+
+      - name: setup env
+        run: |
+          echo $CONDA/bin >> $GITHUB_PATH
+          echo "PDK_ROOT=$CONDA/share/pdk" >> $GITHUB_ENV
+          echo "PDK=gf180mcuC" >> $GITHUB_ENV
+
+      - name: test tools
+        run: |
+          yosys --version
+          openroad -version
+          magic -dnull -noconsole --version
+          netgen -batch quit
+          klayout -zz -v
+
+      - name: restore gds cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            def/
+            gds/
+            lef/
+            mag/
+            maglef/
+            sdc/
+            sdf/
+            signoff/
+            spef/
+            spi/
+            verilog/
+          key: ${{ runner.os }}-gds-${{ github.run_id }}
 
       - name: run tapeout
         if: always()
